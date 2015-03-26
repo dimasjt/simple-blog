@@ -1,0 +1,28 @@
+<template name="modalPost">
+  <div class="modal fade" id="modalPost" tabindex="1050" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form id="new_post">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">New Post</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="post_title">Post Title</label>
+              <input type="text" id="post_title" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="post_description">Description</label>
+              <textarea id="post_description" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-success" value="Save"/>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
